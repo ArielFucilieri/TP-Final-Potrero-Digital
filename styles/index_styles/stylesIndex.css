@@ -1,0 +1,315 @@
+/*tipografia*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/*global*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+/*header*/
+.nav{
+    width: 100%;
+    z-index: 1;
+    position: fixed !important;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 3.5rem;
+    color: white;
+}
+
+.nav-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    gap: 4rem;
+    margin-left: 1rem;
+}
+
+.nav-contenido li {
+    list-style: none;
+}
+
+.nav-contenido li img{
+    width: 2rem;
+    height: 3.5rem;
+}
+
+.imagen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.nav-index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+/*mi perfil navbar*/
+.usuario-ul{
+    min-width: 140px;
+    gap: 1rem;
+}
+
+.usuario-li{
+    display: block;
+    padding: 0.7rem;
+    list-style: none;
+    background-color: black;
+    margin-top: 2.7rem;
+}
+
+.usuario-li-2{
+    margin-top: 0;
+    background-color: black;
+    padding: 0.7rem;
+}
+
+.usuario-ul li{
+    display: none;
+}
+.usuario-ul:hover{
+    cursor: pointer;
+}
+
+.usuario-ul:hover > li{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    min-width: 140px;
+}
+
+.usuario-li:hover{
+    cursor: pointer;
+    background-color: rgb(50, 49, 49);
+}
+
+.usuario-li-2:hover{
+    cursor: pointer;
+    background-color: rgb(50, 49, 49);
+}
+
+/*slider*/
+
+.slider-frame{
+    width: 100%;
+    height: 38rem;
+    overflow: hidden;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+    height: 55%;
+    filter:brightness(0.6);
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}   
+}
+
+/*body*/
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+body{
+    background-image: url(/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*hr*/
+hr{
+    border: none;
+    border-top: 1px solid rgb(255, 255, 255);
+
+}
+.separador-arriba{
+    margin-top: 8rem;
+    margin-bottom: -6rem;
+}
+.separador-abajo{
+    margin-top: 1rem;
+}
+
+.contenedor-titulo{
+    width: 50%;
+    margin-left: 22rem;
+}
+/*quienes somos section*/
+
+.quienes{
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.contenedor-quienes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.texto{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    font-weight: 500;
+}
+
+
+/*cards*/
+.container{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.card{
+    background-color: white;
+    height: 20rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.4s, background-color 0.2s, color 0.2s, box-shadow 0.4s ease;
+}
+
+
+
+.imagen img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+.text{
+    padding: 0.3rem;
+    height: 9.5rem;
+    overflow: hidden;
+    margin-left: 0.5rem;
+}
+
+/*transition*/
+
+.card:hover{
+    transform: translateY(-5px);
+    background-color: #D8DDDE;
+    color: #1C3738;
+    box-shadow: 2px 2px black
+}
+
+.provincias{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/*styles links*/
+
+a{
+    text-decoration: none;
+
+}
+
+a:link {text-decoration: none;
+
+}
+a:hover { color: white;
+    text-decoration: none;
+}
+a:visited {color: white; 
+    text-decoration: none; 
+}
+
+/*footer*/
+
+.separador-footer{
+    width: 100%;
+    color: black;
+}
+
+.footer{
+    width: 100%;
+    height: 10rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redes{
+    color: white;
+}
+
+.contacto{
+    color: white;
+}
+
+.redes-sociales{
+    color: white;
+    list-style: none;
+}
+
+.redes-sociales li{
+    margin-top: 0.7rem;
+}
+
+.redes-sociales img{
+    width: 1rem;
+    height: 1rem;
+}
+.acomodar{
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+}
